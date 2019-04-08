@@ -16,7 +16,7 @@ public class HelloWorldController {
     @Autowired
     HelloWorldRepository helloWorldRepository;
 
-    @GetMapping("/get_text")
+    @GetMapping("/")
     public JSONPObject getText(){
         return new HelloWorldBusinessLogic(this.helloWorldRepository).getText();
     }
