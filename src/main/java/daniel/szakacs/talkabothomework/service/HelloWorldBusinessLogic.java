@@ -13,9 +13,8 @@ public class HelloWorldBusinessLogic {
         this.helloWorldRepository = helloWorldRepository;
     }
 
-    public JSONPObject getText(){
-//        return new JSONPObject("text",this.helloWorldRepository.getById(Long.parseLong("1")));
-        return new JSONPObject("text", "Hello World");
+    public String getText(){
+        return this.helloWorldRepository.getById(Long.parseLong("1")).getText();
     }
 
 }
