@@ -1,6 +1,7 @@
 package daniel.szakacs.talkabothomework.controller;
 
 import com.fasterxml.jackson.databind.util.JSONPObject;
+import daniel.szakacs.talkabothomework.repository.HelloWorldRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
