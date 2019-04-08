@@ -1,6 +1,5 @@
 package daniel.szakacs.talkabothomework.controller;
 
-import daniel.szakacs.talkabothomework.model.HelloWorldModel;
 import daniel.szakacs.talkabothomework.repository.HelloWorldRepository;
 import daniel.szakacs.talkabothomework.service.HelloWorldBusinessLogic;
 import org.springframework.beans.factory.annotation.Autowired;
