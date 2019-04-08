@@ -61,6 +61,7 @@
         </dependency>
 
         <!--against nested exception is org.springframework.beans.factory.BeanCreationException-->
+        <!--If you use postgres database-->
         <dependency>
         <groupId>org.postgresql</groupId>
         <artifactId>postgresql</artifactId>
