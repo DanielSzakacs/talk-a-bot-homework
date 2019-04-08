@@ -1,6 +1,5 @@
 package daniel.szakacs.talkabothomework.service;
 
-import com.fasterxml.jackson.databind.util.JSONPObject;
 import daniel.szakacs.talkabothomework.repository.HelloWorldRepository;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +13,7 @@ public class HelloWorldBusinessLogic {
     }
 
     public String getText(){
-        return this.helloWorldRepository.getById(Long.parseLong("1")).getText();
+        return helloWorldRepository.getById(Long.parseLong("1")).getText();
     }
 
 }

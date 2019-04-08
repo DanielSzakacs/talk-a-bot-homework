@@ -1,6 +1,6 @@
 package daniel.szakacs.talkabothomework.controller;
 
-import com.fasterxml.jackson.databind.util.JSONPObject;
+import daniel.szakacs.talkabothomework.model.HelloWorldModel;
 import daniel.szakacs.talkabothomework.repository.HelloWorldRepository;
 import daniel.szakacs.talkabothomework.service.HelloWorldBusinessLogic;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,10 +14,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorldController {
 
     @Autowired
-    HelloWorldRepository helloWorldRepository;
+    private HelloWorldRepository helloWorldRepository;
+
+    @Autowired
+    private HelloWorldBusinessLogic helloWorldBusinessLogic = new HelloWorldBusinessLogic(helloWorldRepository);
 
     @GetMapping("/")
     public String getText(){
-        return new HelloWorldBusinessLogic(this.helloWorldRepository).getText();
+        return helloWorldBusinessLogic.getText();
     }
 }

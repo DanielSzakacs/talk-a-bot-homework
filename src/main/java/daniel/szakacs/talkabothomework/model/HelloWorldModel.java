@@ -18,10 +18,6 @@ public class HelloWorldModel {
         this.text = text;
     }
 
-    public Long getId() {
-        return id;
-    }
-
     public String getText() {
         return text;
     }
