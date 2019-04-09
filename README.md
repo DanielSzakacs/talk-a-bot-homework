@@ -3,7 +3,7 @@
 The main goal is to return a text (Hello World) from the database.         
 ![alt text](pic/result.png)                                 
                                  
-#How to run it...
+#How to run it... in Eclipse.
 1. Open the project in Eclipse.                             
 
 2. Before running the application, please add your local database connection.     
